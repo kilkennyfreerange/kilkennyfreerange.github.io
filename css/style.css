@@ -128,6 +128,20 @@ article {
   color: #fff;
 }
 
+.navbar-default .navbar-toggle {
+  background: #c02942;
+  border-color: #542437;
+  transition: ease 0.4s;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background: #ecd078;
+}
+
+.navbar-default .navbar-toggle:hover {
+  background: #542437;
+}
+
 .sudo-border {
   margin-top: 0;
   border-top: 3px solid #542437;
@@ -424,10 +438,11 @@ footer .input-group ::-webkit-input-placeholder {
 ===================================== */
 @media screen and (max-width: 768px) {
   body {
-    padding-top: 50px;
+    padding-top: 17px;
   }
   .navbar-default .navbar-brand {
     padding-top: 15px;
+    font-size: 1.5rem;
   }
   .sm-3,
   .sm-4 {

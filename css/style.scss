@@ -118,6 +118,17 @@ article {
       }
     }
   }
+  .navbar-toggle {
+    background: $kfr-primary;
+    border-color: $kfr-dark;
+    transition: ease 0.4s;
+    .icon-bar {
+      background: $background-color;
+    }
+  }
+  .navbar-toggle:hover {
+    background: $kfr-dark;
+  }
 }
 .sudo-border {
   margin-top: 0;
@@ -378,11 +389,12 @@ footer {
 ===================================== */
 @media screen and (max-width: 768px) {
   body {
-    padding-top: 50px;
+    padding-top: 17px;
   }
   .navbar-default {
     .navbar-brand {
       padding-top: 15px;
+      font-size: 1.5rem;
     }
   }
   .sm-3,
