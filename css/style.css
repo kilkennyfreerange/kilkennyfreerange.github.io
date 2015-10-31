@@ -1,10 +1,24 @@
 /* ==================================
               Elements
 ===================================== */
+html,
 body {
+  background-color: #ecd078;
   height: 100% !important;
   font-size: 14px;
-  padding-top: 70px;
+  padding-top: 36px;
+  color: #542437;
+  font-family: 'Arvo';
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #53777a;
+  font-family: "Poiret One";
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2.5rem;
 }
 
 p {
@@ -14,11 +28,11 @@ p {
 }
 
 a {
-  color: #0097ff;
+  color: #c02942;
 }
 
 a:hover {
-  color: #0097ff;
+  color: #c02942;
   text-decoration: underline;
 }
 
@@ -40,7 +54,7 @@ article {
   margin-top: 20px;
   margin-bottom: 20px;
   width: 80px;
-  border-top: 3px solid #0097ff;
+  border-top: 3px solid #c02942;
 }
 
 .spacer-left {
@@ -59,33 +73,49 @@ article {
   color: #999;
 }
 
+.wide-gutter {
+  column-gap: 50px;
+}
+
+.img-thumbnail {
+  background: #ecd078;
+  border-color: #53777a;
+  margin-bottom: 30px;
+}
+
 /* ==================================
               Navbar
 ===================================== */
 .navbar {
   margin-bottom: 0;
+  font-family: "Poiret One";
 }
 
 .navbar-default {
-  background-color: #fff;
+  background-color: #ecd078;
   border-bottom: 0;
 }
 
 .navbar-default .navbar-brand {
   padding-top: 25px;
   padding-bottom: 25px;
-  font-size: 1.5em;
+  font-size: 2.5em;
   text-transform: uppercase;
   font-weight: 700;
-  color: #000;
+  color: #542437;
 }
 
 .navbar-default .navbar-brand:hover {
-  color: #0097ff;
+  color: #c02942;
+}
+
+.navbar-default .navbar-nav {
+  margin-right: 0;
 }
 
 .navbar-default .navbar-nav li a {
   text-transform: uppercase;
+  font-size: 1.5em;
   color: #000;
   font-weight: 500;
   letter-spacing: 1px;
@@ -94,12 +124,13 @@ article {
 }
 
 .navbar-default .navbar-nav li a:hover {
-  color: #0097ff;
+  background: #c02942;
+  color: #fff;
 }
 
 .sudo-border {
   margin-top: 0;
-  border-top: 3px solid #000;
+  border-top: 3px solid #542437;
   margin-bottom: 0;
 }
 
@@ -121,9 +152,11 @@ article {
   letter-spacing: 1px;
   margin-bottom: 25px;
   font-weight: 700;
-  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.55);
+  text-shadow: 0 1px 15px rgba(255, 255, 255, 0.75);
   font-family: Pacifico;
-  font-size: 5rem;
+  font-size: 4.5rem;
+  color: #542437;
+  text-transform: initial;
 }
 
 .more-info-links {
@@ -153,32 +186,44 @@ article {
       Secondary Menu & Restaurants
 ===================================== */
 .secondary-menu,
-.restaurants {
+.restaurants,
+.produce {
   margin-bottom: 30px;
 }
 
 .secondary-menu a,
 .secondary-menu p,
 .restaurants a,
-.restaurants p {
+.restaurants p,
+.produce a,
+.produce p {
   display: block;
   text-transform: uppercase;
   text-align: center;
-  font-weight: 600;
+  font-weight: normal;
   letter-spacing: 1px;
   color: #fff;
   transition: ease 0.5s;
   text-shadow: 0 1px 10px rgba(0, 0, 0, 0.55);
 }
 
-.secondary-menu a,
-.restaurants a {
+.secondary-menu a {
   font-size: 2em;
   padding-top: 30%;
   padding-bottom: 30%;
 }
 
-.secondary-menu p,
+.secondary-menu a:hover {
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.secondary-menu-bottom a {
+  font-size: 1.75em;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+
 .restaurants p {
   font-size: 1.6em;
   padding-top: 17.5%;
@@ -186,15 +231,18 @@ article {
   background: rgba(0, 0, 0, 0.4);
 }
 
-.secondary-menu a:hover,
-.restaurants a:hover {
-  text-decoration: none;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.secondary-menu p:hover,
 .restaurants p:hover {
   background: none;
+}
+
+.produce p {
+  font-size: 2.4em;
+  padding-top: 30%;
+  padding-bottom: 30%;
+}
+
+.produce p:hover {
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .sm_1 {
@@ -262,6 +310,16 @@ article {
   background-size: cover;
 }
 
+.p_1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.25) 100%), url("/images/ducks.jpg") center center;
+  background-size: cover;
+}
+
+.p_2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.25) 100%), url("/images/geese.jpg") center center;
+  background-size: cover;
+}
+
 /* ==================================
               Footer
 ===================================== */
@@ -271,20 +329,23 @@ footer {
 
 footer .input-group .form-control:first-child {
   border-radius: 0;
-  border: 1px solid #000;
+  border: 1px solid #542437;
+  background: #ecd078;
+  height: 3.5em;
 }
 
 footer .input-group .input-group-addon:last-child {
   border: 1px solid #000;
   border-left: 0;
   border-radius: 0;
-  background-color: #0097ff;
-  color: #fff;
+  background-color: #53777a;
+  color: #ecd078;
 }
 
 footer .input-group ::-webkit-input-placeholder {
-  color: #0097ff;
+  color: #c02942;
   font-weight: 500;
+  font-size: 1em;
 }
 
 /* ==================================
