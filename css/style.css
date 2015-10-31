@@ -1,0 +1,340 @@
+/* ==================================
+              Elements
+===================================== */
+body {
+  height: 100% !important;
+  font-size: 14px;
+  padding-top: 70px;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  font-size: 1em;
+}
+
+hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-color: #888;
+}
+
+article {
+  columns: 2;
+  margin-bottom: 30px;
+}
+
+/* ==================================
+              Classes
+===================================== */
+.spacer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 80px;
+  border-top: 3px solid #0097ff;
+}
+
+.spacer-left {
+  margin-left: 0px;
+}
+
+.spacer-right {
+  margin-right: 0px;
+}
+
+.restaurant-logos {
+  max-width: 200px;
+}
+
+/* ==================================
+              Navbar
+===================================== */
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar-default {
+  background-color: #fff;
+  border-bottom: 0;
+}
+
+.navbar-default .navbar-brand {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: #0097ff;
+}
+
+.navbar-default .navbar-nav li a {
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.navbar-default .navbar-nav li a:hover {
+  color: #0097ff;
+}
+
+.sudo-border {
+  margin-top: 0;
+  border-top: 3px solid #000;
+  margin-bottom: 0;
+}
+
+/* ==================================
+          Main landing page
+===================================== */
+.splash-landing {
+  min-height: 450px;
+  background: url("../images/hero3.jpg") center center;
+  background-size: cover;
+  color: #fff;
+  display: -webkit-flex;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.splash-landing h1 {
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+  font-weight: 700;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.55);
+  font-family: Pacifico;
+  font-size: 5rem;
+}
+
+/* ==================================
+      A nicely spaced section
+===================================== */
+.ply {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+/* ==================================
+      Secondary Menu & Restaurants
+===================================== */
+.secondary-menu,
+.restaurants {
+  margin-bottom: 30px;
+}
+
+.secondary-menu a,
+.secondary-menu p,
+.restaurants a,
+.restaurants p {
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+  transition: ease 0.5s;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.55);
+}
+
+.secondary-menu a,
+.restaurants a {
+  font-size: 2em;
+  padding-top: 30%;
+  padding-bottom: 30%;
+}
+
+.secondary-menu p,
+.restaurants p {
+  font-size: 1.6em;
+  padding-top: 17.5%;
+  padding-bottom: 17.5%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.secondary-menu a:hover,
+.restaurants a:hover {
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.secondary-menu p:hover,
+.restaurants p:hover {
+  background: none;
+}
+
+.sm_1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.25) 100%), url("/images/chicks.jpg") center center;
+  background-size: cover;
+}
+
+.sm_2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.25) 100%), url("/images/ducks.jpg") center center;
+  background-size: cover;
+}
+
+.sm_3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.25) 100%), url("/images/geese.jpg") center center;
+  background-size: cover;
+}
+
+.sm_4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.25) 100%), url("/images/mairead_walsh.jpg") center center;
+  background-size: cover;
+}
+
+.r_1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.25) 100%), url("/images/campagne-photo.jpg") center center;
+  background-size: cover;
+}
+
+.r_2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.25) 100%), url("/images/restaurant-pg.jpg") center center;
+  background-size: cover;
+}
+
+.r_3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.25) 100%), url("/images/dunbrody-house.jpg") center center;
+  background-size: cover;
+}
+
+.r_4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.25) 100%), url("/images/waterford-castle.jpg") center center;
+  background-size: cover;
+}
+
+.r_5 {
+  background: linear-gradient(rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.25) 100%), url("/images/aldridge-lodge.jpg") center center;
+  background-size: cover;
+}
+
+.r_6 {
+  background: linear-gradient(rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.25) 100%), url("/images/ballyfin-demesne.jpg") center center;
+  background-size: cover;
+}
+
+.r_7 {
+  background: linear-gradient(rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.25) 100%), url("/images/chapter-one.jpg") center center;
+  background-size: cover;
+}
+
+.r_8 {
+  background: linear-gradient(rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.25) 100%), url("/images/thorntons.jpg") center center;
+  background-size: cover;
+}
+
+.r_9 {
+  background: linear-gradient(rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.25) 100%), url("/images/zuni.jpg") center center;
+  background-size: cover;
+}
+
+/* ==================================
+              Footer
+===================================== */
+footer {
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+  background: #eee;
+  color: #aaa;
+  padding-bottom: 70px;
+}
+
+/* ==================================
+            Cheat codes!
+===================================== */
+.light-grey-background {
+  background: #f1f1f1;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.no-margin-top {
+  margin-top: 0;
+}
+
+.margin-t-b-50 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.width-hundred {
+  max-width: 100%;
+}
+
+.width-ninety {
+  max-width: 90%;
+}
+
+.width-eighty {
+  max-width: 80%;
+}
+
+/* ==================================
+          Five column layout
+===================================== */
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.col-xs-5ths {
+  width: 20%;
+  float: left;
+}
+
+@media (min-width: 768px) {
+  .col-sm-5ths {
+    width: 20%;
+    float: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-md-5ths {
+    width: 20%;
+    float: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-lg-5ths {
+    width: 20%;
+    float: left;
+  }
+}
+
+/* ==================================
+            Media queries
+===================================== */
+@media screen and (max-width: 768px) {
+  body {
+    padding-top: 50px;
+  }
+  .navbar-default .navbar-brand {
+    padding-top: 15px;
+  }
+  .sm-3,
+  .sm-4 {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .sm-1,
+  .sm-2 {
+    margin-bottom: 0px;
+  }
+}
