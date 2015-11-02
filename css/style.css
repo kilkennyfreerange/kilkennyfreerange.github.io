@@ -342,25 +342,40 @@ footer {
   padding-bottom: 70px;
 }
 
-footer .input-group .form-control:first-child {
-  border-radius: 0;
+footer #mc_embed_signup form {
+  margin: 0;
+  padding: 0;
+}
+
+footer #mc_embed_signup_scroll input.email,
+footer #mc_embed_signup_scroll input.button {
+  display: inline-block;
+}
+
+footer #mc_embed_signup_scroll input.email {
   border: 1px solid #542437;
   background: #ecd078;
   height: 3.5em;
+  border-radius: 4px;
 }
 
-footer .input-group .input-group-addon:last-child {
-  border: 1px solid #000;
-  border-left: 0;
-  border-radius: 0;
-  background-color: #53777a;
-  color: #ecd078;
-}
-
-footer .input-group ::-webkit-input-placeholder {
+footer #mc_embed_signup_scroll input.email::-webkit-input-placeholder {
   color: #c02942;
   font-weight: 500;
   font-size: 1em;
+}
+
+footer #mc_embed_signup_scroll input.button {
+  background-color: #c02942;
+  width: auto;
+  height: auto;
+  padding: 8px 20px;
+  transition: 0.4s ease;
+  font-weight: normal;
+}
+
+footer #mc_embed_signup_scroll input.button:hover {
+  background-color: #d95B43;
 }
 
 /* ==================================
@@ -453,5 +468,10 @@ footer .input-group ::-webkit-input-placeholder {
   .secondary-menu a {
     padding-top: 15%;
     padding-bottom: 15%;
+  }
+  #mc_embed_signup_scroll input.email,
+  #mc_embed_signup_scroll input.button {
+    display: block;
+    margin: 10px auto;
   }
 }
