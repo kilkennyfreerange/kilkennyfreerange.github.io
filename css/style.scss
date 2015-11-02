@@ -17,9 +17,11 @@ body {
   background-color: $background-color;
   height: 100% !important;
   font-size: 14px;
-  padding-top: 36px;
   color: $kfr-dark;
   font-family: 'Arvo';
+}
+body {
+  padding-top: 70px;
 }
 h1, h2, h3, h4, h5, h6 {
   color: $kfr-secondary;
@@ -139,23 +141,21 @@ article {
          Home page specifics
 ===================================== */
 .splash-landing {
-  min-height: 450px;
   background: url('../images/hero3.jpg') center center;
   background-size: cover;
   color: #fff;
-  display: -webkit-flex;
-  -webkit-justify-content: center;
-  -webkit-align-items: center;
   border-bottom: 1px solid #ccc;
-  h1 {
+  .lead {
+    margin: 0;
+    padding-top: 17%;
+    padding-bottom: 17%;
     letter-spacing: 1px;
-    margin-bottom: 25px;
     font-weight: 700;
     text-shadow: 0 1px 15px rgba(255,255,255,0.75);
     font-family: Pacifico;
     font-size: 4.5rem;
     color: $kfr-dark;
-    text-transform: initial;
+    text-transform: initial !important;
   }
 }
 .more-info-links {
@@ -389,7 +389,7 @@ footer {
 ===================================== */
 @media screen and (max-width: 768px) {
   body {
-    padding-top: 17px;
+    padding-top: 50px;
   }
   .navbar-default {
     .navbar-brand {
@@ -397,14 +397,17 @@ footer {
       font-size: 1.5rem;
     }
   }
-  .sm-3,
-  .sm-4 {
-    margin-bottom: 0px;
+  .splash-landing {
+    .lead {
+      font-size: 2.5em;
+      padding-top: 20%;
+      padding-bottom: 30%;
+    }
   }
-}
-@media screen and (max-width: 992px) {
-  .sm-1,
-  .sm-2 {
-    margin-bottom: 0px;
+  .secondary-menu {
+    a {
+      padding-top: 15%;
+      padding-bottom: 15%;
+    }
   }
 }
