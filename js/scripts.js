@@ -23,3 +23,14 @@ $(document).scroll(function() {
 			$(".scroll_top").css({"opacity":"1"});
 		}
 });
+
+// Make iFrames keep same ratio
+function keepRatio() {
+  var iframeWidth = $( "iframe" ).width();
+  $('iframe').height(iframeWidth * 0.5625);
+}
+keepRatio();
+
+$( window ).resize(function() {
+  keepRatio();
+});
